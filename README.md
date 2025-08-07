@@ -36,11 +36,15 @@ Example values:
 modality = 'Gene'     # Options: 'WSI', 'Gene', 'Reports', 'Clinical'
 cancer = 'BRCA'       # Options: BLCA, BRCA, CSEC, COAD, KIRC, KIRP, LIHC, LUAD, STAD, UCEC
 ```
-
+# Main Scripts
 | Script                             | Description                                                                                                     |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | `Run_TSURE.py`                     | Runs T-SURE on bootstrap samples. Plots rejection curves, Kaplan-Meier survival plots, and gene heatmaps.       |
 | `Run_Comparison.py`                | Compares T-SURE with baseline models (CoxPH, GBM, SVM, etc.) using cross-validation.                            |
-| `Run_DataEfficiency_Experiment.py` | Tests label efficiency: trains T-SURE and baseline models on subsets of training data and compares performance. |
+| `Run_DataEfficiency_Experiment.py` | Tests label efficiency: trains T-SURE and baseline models on various sizes of training data and compares performance. |
+
+
+## 📌 Citation
+TBA
 
 
