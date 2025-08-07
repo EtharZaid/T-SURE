@@ -5,6 +5,8 @@
 It enables learning from both labeled and unlabeled samples while explicitly modeling uncertainty and abstaining from unreliable predictions.  
 T-SURE is applied to multiple cancer types and modalities including whole-slide images (WSI), gene expression, pathology reports, and clinical data.
 
+![Model Overview](assets/model_overview.png)
+
 ---
 
 ## Datasets
