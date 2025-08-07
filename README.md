@@ -27,4 +27,20 @@ To recreate the environment, use the provided `environment.yml` file:
 ```bash
 conda env create -f environment.yml
 conda activate tsure_env
+```
+
+## 🚀 How to Run the Model
+All main scripts allow selection of modality (modality) and cancer type (cancer) using variables at the top of the script.
+Example values:
+```bash
+modality = 'Gene'     # Options: 'WSI', 'Gene', 'Reports', 'Clinical'
+cancer = 'BRCA'       # Options: BLCA, BRCA, CSEC, COAD, KIRC, KIRP, LIHC, LUAD, STAD, UCEC
+```
+
+| Script                             | Description                                                                                                     |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| `Run_TSURE.py`                     | Runs T-SURE on bootstrap samples. Plots rejection curves, Kaplan-Meier survival plots, and gene heatmaps.       |
+| `Run_Comparison.py`                | Compares T-SURE with baseline models (CoxPH, GBM, SVM, etc.) using cross-validation.                            |
+| `Run_DataEfficiency_Experiment.py` | Tests label efficiency: trains T-SURE and baseline models on subsets of training data and compares performance. |
+
 
